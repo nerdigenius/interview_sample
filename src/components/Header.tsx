@@ -10,7 +10,7 @@ function Header() {
     };
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50  text-white p-4 shadow-md font-raleway">
+        <header className="fixed top-0 left-0 w-full z-50  text-white p-4 font-raleway">
             <nav className="flex justify-between items-center md:justify-around">
                 <div className='flex items-center'>
                     {/* Logo */}
