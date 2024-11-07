@@ -11,6 +11,8 @@ module.exports = {
         'raleway': ['Raleway', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'bebas-neue': ['"Bebas Neue"', 'cursive'],
+        'sans': ['Open Sans', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
     },
   },
