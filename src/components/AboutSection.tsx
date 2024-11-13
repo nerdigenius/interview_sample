@@ -68,7 +68,7 @@ const AboutSection = () => {
         <img src={top_bowl} alt="" className="h-72" />
       </div>
 
-      <div className="flex flex-col lg:flex-row p-4">
+      <div className="flex flex-col lg:flex-row p-4 xs:p-2">
         {/* Image and Badge */}
         <div className=" w-full justify-items-center lg:w-1/2 p-2">
           <div className="relative w-fit h-fit">
