@@ -31,8 +31,8 @@ const PopularItems = () => {
       // Set initial display items
       setDisplayItems([items[0], items[1], items[2], items[3]]);
     }
-    const interval = setInterval(goToNext, 3000);
-    return () => clearInterval(interval);
+    // const interval = setInterval(goToNext, 3000);
+    // return () => clearInterval(interval);
   }, [displayItems]);
 
   // Update itemsToShow based on screen width
@@ -53,13 +53,10 @@ const PopularItems = () => {
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) => {
-      const newIndex = (prevIndex + 1) % totalItems;
-      const currentItems = [...displayItems.slice(1), items[prevIndex]]; // Take the next item
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
+    const currentItems = [...displayItems.slice(1), items[currentIndex]]; // Take the next item
       setDirection("animate-slideIn")
       updateDisplayItems(currentItems);
-      return newIndex;
-    });
   };
 
   const goToPrevious = () => {
@@ -121,7 +118,7 @@ const PopularItems = () => {
           }}
         >
           {displayItems.map((item, index) => (
-            <div key={Math.random()} style={{ width: `${100 / itemsToShow}%` }} className='flex justify-center'>
+            <div key={Math.random()+index} style={{ width: `${100 / itemsToShow}%` }} className='flex justify-center'>
               <div className={`flex flex-col items-center text-center p-6 bg-white ${direction} w-[90%] h-full`}>
                 <img src={item.image} alt={item.title} className="w-32 h-32 object-contain mb-4" />
                 <div className="w-12 h-1 bg-red-600 mb-4"></div>

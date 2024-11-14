@@ -33,8 +33,8 @@ const TestimonialSection = () => {
             // Set initial display items
             setDisplayItems([items[0], items[1], items[2], items[3]]);
         }
-        const interval = setInterval(goToNext, 3000);
-        return () => clearInterval(interval);
+        // const interval = setInterval(goToNext, 3000);
+        // return () => clearInterval(interval);
     }, [displayItems]);
 
     // Update itemsToShow based on screen width
@@ -55,14 +55,11 @@ const TestimonialSection = () => {
     };
 
     const goToNext = () => {
-        setCurrentIndex((prevIndex) => {
-            const newIndex = (prevIndex + 1) % totalItems;
-            const currentItems = [...displayItems.slice(1), items[prevIndex]]; // Take the next item
-            setDirection("animate-slideIn")
-            updateDisplayItems(currentItems);
-            return newIndex;
-        });
-    };
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
+        const currentItems = [...displayItems.slice(1), items[currentIndex]]; // Take the next item
+          setDirection("animate-slideIn")
+          updateDisplayItems(currentItems);
+      };
 
     const goToPrevious = () => {
         setCurrentIndex((prevIndex) => {
@@ -126,8 +123,8 @@ const TestimonialSection = () => {
                     }}
                 >
                     {displayItems.map((item, index) => (
-                        <div key={Math.random()} style={{ width: `${100 / itemsToShow}%` }} className='flex justify-center'>
-                            <div className={`flex flex-col lg:flex-row items-center text-center  bg-white ${direction} h-fit`}>
+                        <div key={Math.random()+index} style={{ width: `${100 / itemsToShow}%` }} className='flex justify-center'>
+                            <div key={item.description} className={`flex flex-col lg:flex-row items-center text-center  bg-white ${direction} h-fit`}>
                                 
                                     <TestimonialCard
                                         quote="You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would definitely recommend it."
