@@ -1,6 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { HiOutlinePhone } from 'react-icons/hi';
-import { HiOutlineClock,HiOutlineMail,HiOutlineLocationMarker } from 'react-icons/hi';
+
 import gps from "../assets/gps.svg"
 import insta from "../assets/insta.svg"
 import linked from "../assets/linked.svg"
