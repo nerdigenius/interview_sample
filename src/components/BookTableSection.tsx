@@ -55,12 +55,13 @@ const BookTableSection = () => {
       };
     
       return (
-        <section className="flex items-start justify-center bg-[url('./assets/fork.jpeg')] bg-cover text-white py-16 px-8">
-          <div className="max-w-4xl w-full grid md:grid-cols-2 gap-8">
+        <section className="flex items-start justify-center bg-[url('./assets/fork.jpeg')] bg-cover bg-center lg:bg-top text-white py-16 px-8 lg:h-[788px]">
+          <div className="max-w-7xl w-full grid md:grid-cols-2 ">
             {/* Left Section - Form */}
             <div className="space-y-10">
-              <p className="text-red-500 text-sm font-bold">Book Now</p>
-              <h2 className="text-7xl font-bebas-neue">BOOK YOUR TABLE</h2>
+            <p className="text-red-600 font-roboto mb-2 flex items-center"><div className='h-[10px] w-[10px] bg-red-600 mr-2' /> Book Now</p>
+
+              <h2 className="text-4xl lg:text-7xl font-bebas-neue">BOOK YOUR TABLE</h2>
               <p className="text-white text-sm">
                 Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo molestie vel, ornare non id blandit netus.
               </p>

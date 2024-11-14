@@ -81,7 +81,7 @@ const TestimonialSection = () => {
     };
 
     return (
-        <section className="py-16 px-[10%] bg-[#FBF7F2] relative">
+        <section className="py-16 px-[5%] lg:px-[10%] bg-[#FBF7F2] relative">
             <div className="hidden lg:block absolute z-10 left-0 top-10">
                 <img src={fruit} alt="" className="h-72" />
             </div>
@@ -124,7 +124,7 @@ const TestimonialSection = () => {
                 >
                     {displayItems.map((item, index) => (
                         <div key={Math.random()+index} style={{ width: `${100 / itemsToShow}%` }} className='flex justify-center'>
-                            <div key={item.description} className={`flex flex-col lg:flex-row items-center text-center  bg-white ${direction} h-fit`}>
+                            <div key={item.description} className={`flex flex-col-reverse lg:flex-row items-center text-center  bg-white ${direction} h-fit`}>
                                 
                                     <TestimonialCard
                                         quote="You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would definitely recommend it."

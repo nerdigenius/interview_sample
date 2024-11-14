@@ -1,5 +1,7 @@
 
 import profilePic from "../assets/profile.png"
+import sideVertor from "../assets/sideVector.svg"
+import quoteImage from "../assets/quote.svg"
 type TestimonialCardProps = {
   quote: string;
   authorName: string;
@@ -8,14 +10,22 @@ type TestimonialCardProps = {
 
 const TestimonialCard = ({ quote, authorName, location }: TestimonialCardProps) => {
   return (
-    <div className="flex flex-col justify-between w-full bg-yellow-500 border-2 border-dashed border-blue-600 px-[10%] py-[5%] relative text-gray-800 h-[335px] lg:h-[555px]">
-      <p className="text-lg italic mb-4">" {quote} "</p>
-      <div className="flex items-center justify-between mt-4">
-        <div>
-          <p className="text-sm font-semibold">{authorName}</p>
-          <p className="text-xs text-gray-700">{location}</p>
+    <div className="flex flex-col justify-between w-full lg:w-[45%] bg-yellow-500 border-2 px-[9%] lg:px-[5%] py-[5%] relative text-gray-800 h-[335px] lg:h-[555px] ">
+      <img src={sideVertor} alt="" className="lg:block absolute left-0 bottom-0 lg:bottom-10 w-8" />
+      <div className="w-full">
+        <img src={quoteImage} alt="" className="h-4 w-4" />
+        <p className="text-lg font-roboto text-left pl-4">{quote} </p>
+      </div>
+
+      <div className="flex items-start justify-between border-b-2 border-b-black z-0 relative h-14 mb-6 lg:mb-0">
+        <div className="text-left">
+          <p className="text-lg font-bebas-neue">{authorName}</p>
+          <p className="text-xs font-roboto">{location}</p>
         </div>
-        <img src={profilePic} alt="Author" className="w-10 h-10 rounded-full " />
+        <div className="h-full w-fit  border-b-4 border-b-red-800 z-20 absolute right-0 ">
+          <img src={profilePic} alt="Author" className="w-10 h-10 rounded-full " />
+        </div>
+
       </div>
     </div>
   );

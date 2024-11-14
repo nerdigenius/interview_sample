@@ -4,8 +4,8 @@ import { HiOutlineClock,HiOutlineMail,HiOutlineLocationMarker } from 'react-icon
 
 const Footer = () => {
   return (
-    <section className="relative bg-cover bg-center text-white py-10 px-4 bg-[url('./assets/dining.jpeg')]">
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+    <section className="relative bg-cover bg-center text-white py-10 px-4 bg-[url('./assets/dining.jpeg')] h-fit lg:h-[720px]">
+      <div className="absolute inset-0 bg-black opacity-80"></div>
       <div className="relative z-10">
         {/* Heading */}
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
