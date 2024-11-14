@@ -92,6 +92,7 @@ const BookTableSection = () => {
                     value={formData.date}
                     onChange={handleChange}
                     className={`bg-transparent border ${errors.date ? 'border-red-500' : 'border-white'} px-4 py-2 text-sm placeholder-white`}
+                    placeholder="MM/DD/YYYY"
                   />
                   <input
                     type="number"
