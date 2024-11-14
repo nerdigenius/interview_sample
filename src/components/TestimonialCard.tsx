@@ -1,4 +1,5 @@
 
+import profilePic from "../assets/profile.png"
 type TestimonialCardProps = {
   quote: string;
   authorName: string;
@@ -15,7 +16,7 @@ const TestimonialCard = ({ quote, authorName, location, profileImage }: Testimon
           <p className="text-sm font-semibold">{authorName}</p>
           <p className="text-xs text-gray-700">{location}</p>
         </div>
-        <img src={profileImage} alt="Author" className="w-10 h-10 rounded-full " />
+        <img src={profilePic} alt="Author" className="w-10 h-10 rounded-full " />
       </div>
     </div>
   );
