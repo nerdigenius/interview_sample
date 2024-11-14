@@ -2,7 +2,7 @@
 
 This app is created in React + TypeScript + Vite . 
 
-**Live Demo:** [Link to the live project](https://example.com)  
+**Live Demo:** [Link to the live project](https://interview-sample.vercel.app)  
 
 ## Setup
 
