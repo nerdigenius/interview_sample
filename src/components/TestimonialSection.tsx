@@ -130,7 +130,7 @@ const TestimonialSection = () => {
                                         quote="You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would definitely recommend it."
                                         authorName="Khalid Al Dawsy"
                                         location="Jeddah, Saudi"
-                                        profileImage="src/assets/profile.png" // Replace with the actual image path
+                                        
                                     />
                                 
                                 <div className="w-full h-[335px] lg:h-[555px]">
