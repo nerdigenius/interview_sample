@@ -31,8 +31,8 @@ const PopularItems = () => {
       // Set initial display items
       setDisplayItems([items[0], items[1], items[2], items[3]]);
     }
-    // const interval = setInterval(goToNext, 3000);
-    // return () => clearInterval(interval);
+     const interval = setInterval(goToNext, 3000);
+     return () => clearInterval(interval);
   }, [displayItems]);
 
   // Update itemsToShow based on screen width
