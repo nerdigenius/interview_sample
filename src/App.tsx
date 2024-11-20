@@ -5,6 +5,8 @@ import Header from "./components/Header"
 import HeroSection from "./components/HeroSection"
 import PopularItems from "./components/PopularItems"
 import TestimonialSection from "./components/TestimonialSection"
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 function App() {
 
   return (
@@ -16,6 +18,7 @@ function App() {
       <BookTableSection/>
       <TestimonialSection/>
       <Footer/>
+      <SpeedInsights />
     </div>
   )
 }
